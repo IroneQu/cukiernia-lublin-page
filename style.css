@@ -1,0 +1,506 @@
+/* main style */
+
+:root {
+	--color1: #f2c094;
+	--color2: #d9415d;
+	--color3: #8c5679;
+	--color4: #f22e2e;
+	--color5: #f2f2f2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* header */
+
+header {
+	width: 100%;
+	background-color: var(--color1);
+}
+
+img#logo {
+	width: 100px;
+	margin-right: 15px;
+}
+
+nav {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+a.nav {
+	width: 15%;
+	padding: 15px 20px;
+	margin: 0 20px;
+	background-color: var(--color2);
+	color: var(--color5);
+	border-radius: 20px 0 20px 0;
+	font-weight: 700;
+	font-size: 20px;
+	transition: 0.4s;
+}
+
+a.nav:hover {
+	background-color: var(--color5);
+	color: var(--color2);
+}
+
+/* banner */
+
+.banner {
+	height: 500px;
+	width: 100%;
+	background-image: url('./src/img/top.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+}
+
+.banner-container {
+	height: 100%;
+	width: 100%;
+	backdrop-filter: blur(2px);
+	background-color: #0000006c;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 90px;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+/* main */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.main {
+	width: 65%;
+}
+
+/* main styles of menu, oferta, o nas */
+
+h3 {
+	font-size: 45px;
+	text-transform: uppercase;
+	color: var(--color3);
+	margin: 60px 0;
+	border-bottom: 2px solid var(--color3);
+	border-radius: 10px;
+}
+
+/* menu */
+
+.menu a {
+	font-size: 30px;
+	color: var(--color2);
+	background-color: var(--color1);
+	border-radius: 30px 0 30px 0;
+	padding: 20px 200px;
+	transition: 0.4s;
+}
+
+.menu a:hover {
+	color: var(--color1);
+	background-color: var(--color2);
+}
+
+/* oferta */
+
+.products {
+	width: 100%;
+	background-color: var(--color1);
+	border-radius: 60px 0 60px 0;
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+figure img {
+	margin-bottom: 25px;
+}
+
+figcaption span {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+/* o nas */
+
+.o-nas p {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.o-nas img {
+	width: 80%;
+}
+
+/* main styles for footer */
+
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--color1);
+	margin-top: 50px;
+	padding-bottom: 30px;
+}
+
+.footer-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#kontakt {
+	width: 80%;
+	text-align: center;
+}
+
+.row {
+	margin: 10px 0;
+}
+
+/* kontakt form */
+
+form {
+	width: 50%;
+}
+
+label {
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+	font-weight: 600;
+}
+
+input {
+	display: inline-block;
+	width: 65%;
+	padding: 8px;
+	outline: none;
+}
+
+textarea {
+	display: inline-block;
+	width: 65%;
+	padding: 8px;
+	resize: none;
+	outline: none;
+}
+
+.button {
+	width: 100%;
+	text-align: center;
+}
+
+button {
+	width: 70%;
+	height: 50px;
+	margin-right: 50px;
+	background-color: var(--color2);
+	color: #fff;
+	font-weight: 700;
+	font-size: 24px;
+	border: none;
+	border-radius: 20px 0 20px 0;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+button:hover {
+	color: var(--color2);
+	background-color: #fff;
+}
+
+/* kontakt data */
+
+.contact {
+	width: 40%;
+}
+
+.row h4 {
+	font-size: 24px;
+	margin: 12px 0;
+}
+
+.row span {
+	width: 65%;
+	text-align: left;
+	font-size: 24px;
+}
+
+/* media quarries */
+
+@media (max-width: 1400px) {
+	.o-nas p {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 1250px) {
+	img#logo {
+		display: none;
+	}
+
+	nav {
+		padding: 20px 0;
+	}
+
+	a.nav {
+		width: 50%;
+	}
+}
+
+@media (max-width: 1100px) {
+	h1 {
+		font-size: 72px;
+	}
+
+	h2 {
+		font-size: 48px;
+	}
+
+	.menu a {
+		padding: 20px 130px;
+	}
+}
+
+@media (max-width: 900px) {
+	.main {
+		width: 90%;
+	}
+
+	.banner {
+		height: 400px;
+	}
+
+	a.nav {
+		width: 40%;
+		margin: 10px;
+	}
+
+	nav {
+		flex-wrap: wrap;
+	}
+
+	h1 {
+		font-size: 56px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	.menu a:hover {
+		color: var(--color2);
+		background-color: var(--color1);
+	}
+
+	a.nav:hover {
+		background-color: var(--color2);
+		color: var(--color5);
+	}
+
+	button:hover {
+		color: #fff;
+		background-color: var(--color2);
+	}
+}
+
+@media (max-width: 750px) {
+	h1 {
+		font-size: 42px;
+	}
+
+	h2 {
+		font-size: 26px;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	h3 {
+		border-radius: 0;
+	}
+
+	.products {
+		border-radius: 0;
+	}
+
+	.o-nas p {
+		font-size: 16px;
+	}
+
+	.o-nas img {
+		width: 100%;
+	}
+
+	footer {
+		padding-bottom: 15px;
+	}
+
+	.footer-container {
+		flex-wrap: wrap;
+		padding: 0 20px;
+	}
+
+	form {
+		width: 100%;
+		font-size: 120%;
+		padding-bottom: 15px;
+	}
+
+	label {
+		width: 30%;
+	}
+
+	button {
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.contact {
+		width: 100%;
+		text-align: center;
+	}
+
+	.row span {
+		display: inline-block;
+		width: 60%;
+		font-size: 20px;
+	}
+
+	.row h4 {
+		display: inline-block;
+		width: 35%;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.menu a {
+		padding: 20px 80px;
+	}
+
+	a.nav {
+		width: 80%;
+		padding: 10px 15px;
+	}
+
+	.banner {
+		height: 300px;
+	}
+}
+
+@media (max-width: 500px) {
+	nav {
+		padding: 5px 0;
+	}
+
+	a.nav {
+		margin: 5px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 32px;
+	}
+
+	.banner {
+		height: 250px;
+	}
+}
+
+@media (max-width: 450px) {
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	.menu a {
+		padding: 15px 65px;
+		font-size: 20px;
+	}
+
+	.products {
+		flex-direction: column;
+	}
+
+	figcaption {
+		padding-bottom: 15px;
+	}
+
+	.row span {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 350px) {
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	.menu a {
+		padding: 15px 50px;
+	}
+
+	figcaption span {
+		font-size: 20px;
+	}
+
+	label {
+		font-size: 14px;
+	}
+}
