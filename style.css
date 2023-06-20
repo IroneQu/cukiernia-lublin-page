@@ -264,6 +264,40 @@ button:hover {
 	font-size: 24px;
 }
 
+/* back to top on page */
+
+.back-up-page {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+}
+
+.back-up {
+	font-size: 60px;
+	color: var(--color2);
+	background-color: #fff;
+	opacity: 0.8;
+	border-radius: 50%;
+	transition: 0.2s;
+}
+
+.back-up:hover {
+	opacity: 1;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+	animation: bounce 0.5s cubic-bezier(0.5, 0.05, 0.75, 0.5) alternate infinite;
+}
+
+@keyframes bounce {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(0, -10px, 0);
+	}
+}
+
 /* media quarries */
 
 @media (max-width: 1400px) {
@@ -339,6 +373,21 @@ button:hover {
 	button:hover {
 		color: #fff;
 		background-color: var(--color2);
+	}
+
+	.back-up-page {
+		width: 50px;
+		height: 50px;
+	}
+
+	.back-up {
+		font-size: 50px;
+		opacity: 1;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+	}
+
+	.back-up:hover {
+		animation: none;
 	}
 }
 
@@ -484,6 +533,15 @@ button:hover {
 		display: block;
 		width: 100%;
 		text-align: center;
+	}
+
+	.back-up-page {
+		width: 40px;
+		height: 40px;
+	}
+
+	.back-up {
+		font-size: 40px;
 	}
 }
 
