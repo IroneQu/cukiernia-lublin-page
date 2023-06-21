@@ -4,8 +4,7 @@
 	--color1: #f2c094;
 	--color2: #d9415d;
 	--color3: #8c5679;
-	--color4: #f22e2e;
-	--color5: #f2f2f2;
+	--color4: #f2f2f2;
 }
 
 * {
@@ -53,7 +52,7 @@ a.nav {
 	padding: 15px 20px;
 	margin: 0 20px;
 	background-color: var(--color2);
-	color: var(--color5);
+	color: var(--color4);
 	border-radius: 20px 0 20px 0;
 	font-weight: 700;
 	font-size: 20px;
@@ -61,7 +60,7 @@ a.nav {
 }
 
 a.nav:hover {
-	background-color: var(--color5);
+	background-color: var(--color4);
 	color: var(--color2);
 }
 
@@ -367,7 +366,7 @@ button:hover {
 
 	a.nav:hover {
 		background-color: var(--color2);
-		color: var(--color5);
+		color: var(--color4);
 	}
 
 	button:hover {
